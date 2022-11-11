@@ -1,0 +1,23 @@
+* {
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 2rem;
+}
+
+input {
+    color: black;
+}
+
+button > * {
+    color: black;
+}
