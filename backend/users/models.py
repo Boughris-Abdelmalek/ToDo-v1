@@ -8,3 +8,14 @@ class Users(models.Model):
 
     def __str__(self):
         return self.username
+
+class Task(models.Model):
+    user = models.ForeignKey(Users, on_delete=models.CASCADE)
+    title = models.CharField(max_length=30)
+    completed = models.BooleanField(default=False, blank=True, null=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        ordering = ['title']
